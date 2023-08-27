@@ -29,3 +29,8 @@ Apenas relembrando coisas importantes do linux
 
 
 <!-- fim dos comandos básicos -->
+# Comandos sequenciais no bash
+
+Nos vimos vários comandos, como utilizamos de forma sequencial comando a| comando b, mas podemos executar da segunte forma: comando a; comando b; comando c...
+diferentemente do comando com pipe, ele nao vai cometer o erro caso o primeiro executar com erro. e utilizando os comandos de forma sequencial da seguinte forma: comando a && comando b, caso tenha erro no primeiro comando, ele vai travar todo o comando, bem na logica de programação, como utilizamos o ||, que indicamos para o computador um "ou"
+caso o primeiro comando execute, nao executar o segundo. Podemos executar um subshell dentro do bash quando colocamos nossos comandos dentro de parentesis
