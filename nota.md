@@ -34,3 +34,8 @@ Apenas relembrando coisas importantes do linux
 Nos vimos vários comandos, como utilizamos de forma sequencial comando a| comando b, mas podemos executar da segunte forma: comando a; comando b; comando c...
 diferentemente do comando com pipe, ele nao vai cometer o erro caso o primeiro executar com erro. e utilizando os comandos de forma sequencial da seguinte forma: comando a && comando b, caso tenha erro no primeiro comando, ele vai travar todo o comando, bem na logica de programação, como utilizamos o ||, que indicamos para o computador um "ou"
 caso o primeiro comando execute, nao executar o segundo. Podemos executar um subshell dentro do bash quando colocamos nossos comandos dentro de parentesis
+
+# Redirecionamentos de entrada e saida
+Todo programa tem uma entrada, uma saida e uma saida de erro (stdin, stdout e stderr), e para direcionar uma saida de um arquivo para um novo ou um arquivo existente, usamos o > ou >> e quando resolvemos redirecionar um erro, nos utilizamos o 2> (sim, dessa forma) e para o redirecionamento de entrada, utilizamos o comando < aliado ao comando tr.
+
+# 
