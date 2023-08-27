@@ -20,5 +20,12 @@ Apenas relembrando coisas importantes do linux
 - o comando cut corta palavras de um arquivo a partir da sua posição com as flags -c{n}
 - o Comando diff mostra a diferença entre dois arquivos
 - o comando grep procura por uma string em um texto, porem ele é case sensitive, e para que nao tenhamos nenhum problema de case sensitive, utilizamos a flag -i. para contar o numero de ocorrencias, utilizamos -c. e para nao mostrar o que estamos buscando, utilizamos a flag -v. O -r faz a pesquisa recursiva e combinando com o l (-rl) ele retorna apenas em quais arquivos estao tendo aquela ocorrencia. Podemos utilizar a flag -a{n} sendo o n o numero de linhas, as linhas apos a ocorrencia que estamos buscando. O fgrep é mais leve
+- o Sed é um editor de filtragem e transformação de texto; Para deletar alguma linha, nos colocamos da seguinte forma: sed 'a, b, funcao' <nome do arquivo>
+- more <nome do arquivo> mostra todo o conteudo de forma paginada, ja o less <nomedoarquivo> mostra o arquivo por linha, mas da mesma forma que o more, porem podendo navegar
+- find faz a busca de arquivos dentro da arvore de trabalho, na seguinte estrutura: find [estrutura de diretorios]  -tipodebusca {o que buscar}
+- o comando date retorna a data, e caso incluimos a estrutura de regex que vemos em python com = "+%d" para dia, por exemplo
+- o comando seq faz uma sequencia, na estrutura: seq valorinit [valor de pace] valorfim
+- e por fim, mas nao menos importante, o comando de expr faz contas ou comparação, da seguinte forma: expr valorA conta valorB
 
-- o Sed é um editor de filtragem e transformação de texto; Para deletar alguma linha, nos colocamos da seguinte forma: sed 'a, b, funcao' arquivo
+
+<!-- fim dos comandos básicos -->
