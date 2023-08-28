@@ -38,4 +38,55 @@ caso o primeiro comando execute, nao executar o segundo. Podemos executar um sub
 # Redirecionamentos de entrada e saida
 Todo programa tem uma entrada, uma saida e uma saida de erro (stdin, stdout e stderr), e para direcionar uma saida de um arquivo para um novo ou um arquivo existente, usamos o > ou >> e quando resolvemos redirecionar um erro, nos utilizamos o 2> (sim, dessa forma) e para o redirecionamento de entrada, utilizamos o comando < aliado ao comando tr.
 
-# 
+# Variaveis de shell
+O Shell trabalha com variaveis de ambiente, quando o sistema carrega. e nos conseguimos verificar todas as variaveis pelo comando env; e nos referenciamos a variavel com um $ e podemos declarar variaveis, seguindo as regras de programação, da seguinte forma: NomeDaVariavel=valor, sem nenhum tipo de espaço. quando mandamos fazer um echo de dois cifrões, nos temos o retorno do codigo da variavel que está sendo executada no momento
+<!-- Exportando a variavel do bash -->
+Utilizando o comando export nos vamos conseguir exportar as variaveis para outros bashes, e utilizando comandos para dentro da variavel, nos fazemos da seguinte forma: variavel=$(comandos que vao ser colocados na variavel) e o comando set ve todas as variaveis, enquanto as variaveis env ve todas as variaveis locais
+
+# Regex
+<!-- File Globbing x REGEX -->
+O File Globbing é uma forma que o bash seleciona arquivos de diretorios na interface, utilizando caracteres especiais, como * no fim de um nome de arquivo que nao sabemos a extensão do arquivo
+
+# Criando o arquivo
+criamos o arquivo como vi nomedoarquivo.sh (e crie um padrão de nome de arquivo, como camelCase, PascalCase, snake_case), a primeira linha identifica qual vai ser o intepretador, da seguinte forma:
+
+#!/bin/bash <!-- isso serve para definirmos onde essa pomba vai rodar, se vai ser no bash, no terminal do python, na casa do ... , e você pode ver essa diferença no arquivo "segundo script, onde nos rodamos um script python"-->
+
+Para rodar nossos scripts, nos devemos inserir o ./ ou o path que está o nosso script, pois caso apenas digitando o nome do arquivo, ele nao vai simplesmente executar. Porem, caso inserirmos na variavel path os nossos scripts, ele vai rodar os scripts sem a necessidade de indicar o path que ele esta (até pq ja fizemos isso anteriormente)
+
+# Comentários no script
+Comentários são essenciais no script para entender o que caralhos aquela porra ta fazendo. Você precisa criar um cabeçalho, explicando oq aquilo faz, updates, etc...
+<!-- 
+#############################
+#
+# Segundo script - Script do curso de Shell Scripting
+# Autor: Thiago Mares
+# Data criação: 23/04/2023
+# Descrição: Este é o segundo script. Ele irá imprimir um olá mundo no shell do python
+#
+#############################
+-->
+
+# Trabalhando com variaveis no codigo
+Variaveis facilitam o trabalho do programador, uma vez que os valores podem mudar e que possivelmente nos veremos muitas mudanças, além de deixar o codigo mais legivel. Vamos ver a diferença disso:
+
+<!-- Primeiro Script x Terceiro Script -->
+<!-- 
+    #!/bin/bash
+
+clear
+echo -n "Data e hora atual: "
+date
+
+ -->
+
+ <!-- 
+ #!/bin/bash
+
+DATAHORA=$(date +%H:%M)
+clear
+echo "Exibir data e hora atual: $DATAHORA"
+ -->
+
+# Exit codes
+Existem diversas saidas possiveis dentro do shell scripting, sendo 0 no errors, e QUALQUER COISA acima de 0 é um erro
