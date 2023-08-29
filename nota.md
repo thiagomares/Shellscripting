@@ -90,3 +90,35 @@ echo "Exibir data e hora atual: $DATAHORA"
 
 # Exit codes
 Existem diversas saidas possiveis dentro do shell scripting, sendo 0 no errors, e QUALQUER COISA acima de 0 é um erro
+
+# recebendo entradas do usuário
+para recebermos a entrada do usuario, utilizamos a palavra separada read, das seguintes formas:
+<!-- #!/bin/bash
+
+read -p "Digite seu nome: " NOME
+echo "Bem vindo, $NOME"
+
+# Podemos declarar varias variaveis de uma vez
+echo "digite 3 valores"
+read var1 var2 var3
+echo "o que você escreveu foi: $var1 $var2 $var3"
+
+
+# E podemos rodar nossas variaveis dentro de um echo, usando o sub bash
+ -->
+
+# Recebendo entradas do usuário a partir de parametros
+<!-- 
+     E podemos rodar nossas variaveis dentro de um echo, usando o sub bash
+
+# Parametros
+# $0 - Nome do programa
+# $n - Valor da posição n (onde n é a ordem)
+# $# - Quantidade de parametos
+# $@ - Todos os parâmetros em uma string separados por espaco.
+# $*  - Todos os parametros inseridos
+
+
+echo "O script $0 recebeu $# parametros"
+echo "Os parametros foram: $*"
+ -->
