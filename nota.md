@@ -122,3 +122,26 @@ echo "o que você escreveu foi: $var1 $var2 $var3"
 echo "O script $0 recebeu $# parametros"
 echo "Os parametros foram: $*"
  -->
+
+ # Estruturas condicionais
+ Assim como temos em várias linguagens de programação, em shell scripting nos temos tambem algo parecido, na seguinte forma
+ if <condição> <!--aqui sempre vai ter um comando junto, como o caso do test-->
+ then
+ <comandos caso verdadeiro>
+ else  
+ <comandos caso falso>
+ fi
+
+ e caso tenhamos um else if (elif)
+ <!-- #!/bin/bash
+  if <condição>
+ then
+ <comandos caso verdadeiro>
+ elif  
+ <comandos caso elif>
+ else
+ <comandos caso falso>
+ fi
+ -->
+
+
